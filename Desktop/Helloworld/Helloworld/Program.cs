@@ -4,9 +4,11 @@ namespace Helloworld
 {
     class Program
     {
+        const string helloworld_string = "Helloworld!";
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Helloworld!");
+            Console.WriteLine(helloworld_string);
             Console.Read();
         }
     }
