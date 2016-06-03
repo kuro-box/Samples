@@ -1,7 +1,10 @@
 ﻿using System;
 
-namespace AbstractFactory.App.Bootstarp
+namespace FactoryMethod.App.Bootstarp.Simple
 {
+    /// <summary>
+    /// 演示简单工厂模式
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
@@ -9,9 +12,9 @@ namespace AbstractFactory.App.Bootstarp
             Writer writer = null;
             writer = WriterFactory.CreateWriter();
             writer.Write();
-            writer = WriterFactory.CreateWriter( WriteMode.Database);
+            writer = WriterFactory.CreateWriter(WriteMode.Database);
             writer.Write();
-            writer = WriterFactory.CreateWriter( WriteMode.Log);
+            writer = WriterFactory.CreateWriter(WriteMode.Log);
             writer.Write();
 
             Console.Read();
