@@ -3,6 +3,9 @@ using System;
 
 namespace Builder.App.Bootstarp
 {
+    /// <summary>
+    /// 演示建造者模式
+    /// </summary>
     class Program
     {
         static void Main(string[] args)

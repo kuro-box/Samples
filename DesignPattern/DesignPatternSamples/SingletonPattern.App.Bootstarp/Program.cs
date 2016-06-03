@@ -2,6 +2,9 @@
 
 namespace SingletonPattern.App.Bootstarp
 {
+    /// <summary>
+    /// 演示单例模式
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
