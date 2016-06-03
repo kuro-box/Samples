@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.App.Bootstarp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod.App.Bootstarp.Simple", "FactoryMethod.App.Bootstarp.Simple\FactoryMethod.App.Bootstarp.Simple.csproj", "{72A13936-E593-4947-90F8-C66D7D99478D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder.App.Bootstarp", "Builder.App.Bootstarp\Builder.App.Bootstarp.csproj", "{42CECCD1-E46A-4250-B162-3ED4821A9632}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{72A13936-E593-4947-90F8-C66D7D99478D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72A13936-E593-4947-90F8-C66D7D99478D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72A13936-E593-4947-90F8-C66D7D99478D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CECCD1-E46A-4250-B162-3ED4821A9632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CECCD1-E46A-4250-B162-3ED4821A9632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CECCD1-E46A-4250-B162-3ED4821A9632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CECCD1-E46A-4250-B162-3ED4821A9632}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,5 +54,6 @@ Global
 		{06F0BC18-805C-434A-B49E-57FDDA64EB3B} = {D3C89C63-3003-41E7-836D-EBA9D7DC277A}
 		{C2E4C810-60BD-42FC-B619-61A6AF89D589} = {D3C89C63-3003-41E7-836D-EBA9D7DC277A}
 		{72A13936-E593-4947-90F8-C66D7D99478D} = {D3C89C63-3003-41E7-836D-EBA9D7DC277A}
+		{42CECCD1-E46A-4250-B162-3ED4821A9632} = {D3C89C63-3003-41E7-836D-EBA9D7DC277A}
 	EndGlobalSection
 EndGlobal
