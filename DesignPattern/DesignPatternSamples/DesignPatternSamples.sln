@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "创建型", "创建型", "{D3C89C63-3003-41E7-836D-EBA9D7DC277A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "结构型", "结构型", "{FAC484A2-D399-4F33-8607-13AE64D80DB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "行为型", "行为型", "{8DB32DC9-FE3A-4AC8-8C6E-9E3943970325}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern.App.Bootstarp", "SingletonPattern.App.Bootstarp\SingletonPattern.App.Bootstarp.csproj", "{31D2F0C4-127B-4861-96CA-4CFC4FE9B410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31D2F0C4-127B-4861-96CA-4CFC4FE9B410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31D2F0C4-127B-4861-96CA-4CFC4FE9B410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31D2F0C4-127B-4861-96CA-4CFC4FE9B410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31D2F0C4-127B-4861-96CA-4CFC4FE9B410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31D2F0C4-127B-4861-96CA-4CFC4FE9B410} = {D3C89C63-3003-41E7-836D-EBA9D7DC277A}
+	EndGlobalSection
+EndGlobal
