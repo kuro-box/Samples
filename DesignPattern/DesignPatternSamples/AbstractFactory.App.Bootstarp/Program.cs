@@ -2,17 +2,21 @@
 
 namespace AbstractFactory.App.Bootstarp
 {
+    /// <summary>
+    /// 演示抽象工厂
+    /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            Writer writer = null;
-            writer = WriterFactory.CreateWriter();
-            writer.Write();
-            writer = WriterFactory.CreateWriter( WriteMode.Database);
-            writer.Write();
-            writer = WriterFactory.CreateWriter( WriteMode.Log);
-            writer.Write();
+            new TextFactory().CreateWriter().Write();
+            new TextFactory().CreateReader().Read();
+
+            new DbFactory().CreateWriter().Write();
+            new DbFactory().CreateReader().Read();
+
+            new LogFactory().CreateWriter().Write();
+            new LogFactory().CreateReader().Read();
 
             Console.Read();
         }
@@ -47,34 +51,78 @@ namespace AbstractFactory.App.Bootstarp
         }
     }
 
-    public enum WriteMode
+    public abstract class Reader
     {
-        Text,
-        Database,
-        Log
+        public abstract void Read();
     }
 
-    public class WriterFactory
+    public class TextReader : Reader
     {
-        public static Writer CreateWriter(WriteMode mode = WriteMode.Text)
+        public override void Read()
         {
-            Writer writer = null;
+            Console.WriteLine("Read content from Text");
+        }
+    }
 
-            switch (mode)
-            {
-                case WriteMode.Database:
-                    writer = new DbWriter();
-                    break;
-                case WriteMode.Log:
-                    writer = new LogWriter();
-                    break;
-                case WriteMode.Text:
-                default:
-                    writer = new TextWriter();
-                    break;
-            }
+    public class DbReader : Reader
+    {
+        public override void Read()
+        {
+            Console.WriteLine("Read content from Database");
+        }
+    }
 
-            return writer;
+    public class LogReader : Reader
+    {
+        public override void Read()
+        {
+            Console.WriteLine("Read content from Log");
+        }
+    }
+
+    public abstract class BaseFactory
+    {
+        public abstract Writer CreateWriter();
+
+        public abstract Reader CreateReader();
+    }
+
+    public class TextFactory : BaseFactory
+    {
+        public override Writer CreateWriter()
+        {
+            return new TextWriter();
+        }
+
+        public override Reader CreateReader()
+        {
+            return new TextReader();
+        }
+    }
+
+    public class DbFactory : BaseFactory
+    {
+        public override Writer CreateWriter()
+        {
+            return new DbWriter();
+        }
+
+        public override Reader CreateReader()
+        {
+            return new DbReader();
+        }
+    }
+
+    public class LogFactory : BaseFactory
+    {
+        public override Writer CreateWriter()
+        {
+            return new LogWriter();
+        }
+
+        public override Reader CreateReader()
+        {
+            return new LogReader();
         }
     }
 }
